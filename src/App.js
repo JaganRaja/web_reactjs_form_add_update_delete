@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import ListDetails from "./ListDetails.js";
 
 function App() {
@@ -36,11 +36,14 @@ function App() {
 
   console.log("fullDetails", fullDetails);
 
-  const handleEdit = (obj) => {
-    console.log("Edit obj", obj);
-    setPersonalObj(obj);
-    setIsEdit(true);
-  };
+  const handleEdit = useCallback(
+    (obj) => {
+      console.log("Edit obj", obj);
+      setPersonalObj(obj);
+      setIsEdit(true);
+    },
+    [fullDetails]
+  );
 
   const handleUpdate = (event) => {
     event.preventDefault();
@@ -59,14 +62,17 @@ function App() {
     setIsEdit(false);
   };
 
-  const handleDelete = (obj) => {
-    //console.log("obj", obj);
-    setFullDetails((previousState) =>
-      previousState.filter((details) => {
-        return details.id !== obj.id;
-      })
-    );
-  };
+  const handleDelete = useCallback(
+    (obj) => {
+      //console.log("obj", obj);
+      setFullDetails((previousState) =>
+        previousState.filter((details) => {
+          return details.id !== obj.id;
+        })
+      );
+    },
+    [fullDetails]
+  );
 
   // const handleDelete = (obj) => {
   //   console.log("obj", obj);

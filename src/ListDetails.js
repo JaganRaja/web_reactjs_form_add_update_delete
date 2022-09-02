@@ -1,3 +1,4 @@
+import { memo } from "react";
 import React from "react";
 import "./ListDetails.css";
 
@@ -5,6 +6,7 @@ function ListDetails({ data, handleEdit, handleDelete }) {
   return (
     <div className="ListDetailsContainer">
       <h4>please see what you have added:</h4>
+      {console.log("ListDetails function is called...")}
       {data &&
         data.map((item) => {
           return (
@@ -29,4 +31,4 @@ function ListDetails({ data, handleEdit, handleDelete }) {
   );
 }
 
-export default ListDetails;
+export default memo(ListDetails);
