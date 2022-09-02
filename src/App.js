@@ -93,7 +93,7 @@ function App() {
           placeholder="your name"
           required
         ></input>
-        <label htmlFor="email">Last Name</label>
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
@@ -103,7 +103,7 @@ function App() {
           placeholder="sample@mail.com"
           required
         ></input>
-        <label htmlFor="phonenumber">Last Name</label>
+        <label htmlFor="phonenumber">Phone Number</label>
         <input
           type="tel"
           id="phonenumber"
