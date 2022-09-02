@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JaganRaja/web_reactjs_form_add_update_delete/static/css/main.c3121ccd.css",
+    "main.js": "/JaganRaja/web_reactjs_form_add_update_delete/static/js/main.8eec28d6.js",
+    "static/js/787.e8cc5339.chunk.js": "/JaganRaja/web_reactjs_form_add_update_delete/static/js/787.e8cc5339.chunk.js",
+    "index.html": "/JaganRaja/web_reactjs_form_add_update_delete/index.html",
+    "main.c3121ccd.css.map": "/JaganRaja/web_reactjs_form_add_update_delete/static/css/main.c3121ccd.css.map",
+    "main.8eec28d6.js.map": "/JaganRaja/web_reactjs_form_add_update_delete/static/js/main.8eec28d6.js.map",
+    "787.e8cc5339.chunk.js.map": "/JaganRaja/web_reactjs_form_add_update_delete/static/js/787.e8cc5339.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3121ccd.css",
+    "static/js/main.8eec28d6.js"
+  ]
+}
